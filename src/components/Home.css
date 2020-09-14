@@ -1,0 +1,38 @@
+.home{
+    display: flex;
+    justify-content: center;
+    max-width: 1500px;
+    margin: 0 auto;
+    min-height: 100vh;
+}
+
+
+
+.home_row{
+    display: flex;
+    z-index: 1;
+    margin: 0 5px;
+}
+.home_image{
+    width: 100%;
+    z-index: -1;
+    margin-bottom: -150px;
+    mask-image: linear-gradient(to bottom, rgba(0,0,0,1),rgba(0,0,0,0))
+}
+
+@media (max-width: 800px){
+    .home_image {
+       margin-bottom: 0px;
+    }
+    .home_row{
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+}
+
+@media (max-width: 500px){
+    .home_row{
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,130 @@
+
+.basket-item{
+    display: flex;
+    justify-content: space-between;
+    margin:0;
+    background-color: white;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+}
+
+.basket_info{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 12px 0;
+    padding-left: 25px;
+}
+
+.basket_price{
+    margin-top: 12px;
+    justify-self: flex-end;
+    font-size: 1.2rem;
+    line-height: 19px;
+    width: 17.948%;
+    text-align: right;
+}
+
+.basket_info > button{
+    background: #f0c14b;
+    border: 1px solid;
+    margin-top: 10px;
+    color: #1a1a1a;
+    background-image:linear-gradient(rgb(247, 223, 165), rgb(240, 193, 75));
+    border-color: #a88734 #9c7e31 #846a29;
+    border-radius: 3px;
+    padding: 3px;
+    width: 150px;
+}
+
+.basket-item > img{
+    object-fit: contain;
+    width: 180px;
+    height: 180px;
+}
+
+.basket_title{
+    font-size: 17px;
+    font-weight: 800;
+    color: rgb(0, 102, 192);
+    line-height: 1.255!important;
+    margin-bottom: 10px;
+}
+
+.basket_title:hover{
+    text-decoration: underline;
+    color: #c45500;
+}
+
+@media (max-width: 500px){
+    .basket-item > img {
+        width: 160px;
+        height: 170px;
+        padding: 10px;
+    }
+    .basket_price{
+        font-size: 1rem;
+        justify-self: center;
+        text-align: center;
+    }
+    .basket_info{
+        padding-left: 15px;
+    }
+
+}
+
+@media (max-width: 435px){
+    .basket-item > img {
+        width: 140px;
+        height: 150px;
+        padding: 7px;
+    }
+    .basket_price{
+        font-size: 0.9rem;
+    }
+    .basket_info{
+        padding-left: 10px;
+    }
+}
+
+@media (max-width: 375px){
+    .basket-item > img {
+        width: 125px;
+        height: 130px;
+        padding: 7px;
+    }
+    .basket_price{
+        font-size: 0.9rem;
+        justify-self: left;   
+    text-align: center;
+    }
+    .basket_info{
+        padding-left: 6px;
+        width: 40%;
+    }
+    .basket_info > button{
+        width: 100px;
+        font-size: 12px;
+    }
+
+    .basket_title {
+        font-size: 15px;
+        font-weight: 600;
+    }
+    
+}
+
+@media (max-width: 320px){
+    .basket-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .basket_info{
+        order: 3;
+    }
+    .basket_price {
+       order: 2;
+    }
+}
